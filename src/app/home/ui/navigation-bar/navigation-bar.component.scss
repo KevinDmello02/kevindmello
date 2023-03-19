@@ -1,0 +1,79 @@
+@import '../../../../styles.scss';
+
+.navigation-bar-outer-container {
+  display: block;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  .navigation-inner-container {
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 1300px;
+      margin: auto;
+      .name-container {
+        width: 30%;
+        h2 {
+          color: $cream-white;
+        }
+      }
+      .pages-container {
+        width: 50%;
+        ul {
+          display: flex;
+          flex-direction: row;
+          padding: 0;
+          margin: 0;
+          align-content: center;
+          justify-content: space-around;
+          li {
+            list-style: none;
+            color: $cream-white;
+            text-align: center;
+            cursor: pointer;
+            padding: 1.6em 0em;
+            border-bottom: 2px solid transparent;
+            transition: all .3s ease-in-out;
+            &:hover {
+              color: $brown;
+              border-bottom: 2px solid $brown;
+            }
+          }
+        }
+      }
+      .social-media-container {
+        width: 20%;
+        ul {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          li {
+            list-style: none;
+            color: $cream-white;
+            svg {
+              height: 30px;
+              width: 35px;
+              path {
+                fill: $cream-white;
+              }
+              cursor: pointer;
+              transform: scale(1);
+              &:hover {
+                filter: none;
+                path {
+                  fill: $brown
+                }
+                transform: scale(1.1);
+              }
+              transition: all .3s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+  }
+}

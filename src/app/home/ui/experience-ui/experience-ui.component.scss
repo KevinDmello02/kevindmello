@@ -1,0 +1,49 @@
+@import '../../../../styles.scss';
+
+.experience-outer-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $cream-white;
+  padding: 0% 3% 5% 3%;
+  .heading-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 8%;
+  }
+  .experience-boxs-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .experience-box {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      background-color: $darkgrey;
+      width: 50%;
+      height: 300px;
+      .company-name {
+        color: $brown;
+        font-weight: 700;
+        font-size: 180%;
+      }
+      .description {
+        display: none;
+      }
+      &:hover {
+        .company-name {
+          display: none;
+        }
+        .description {
+          padding: 2%;
+          display: block;
+        }
+      }
+    }
+  }
+}

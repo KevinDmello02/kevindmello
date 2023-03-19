@@ -1,0 +1,23 @@
+@import '../../../../styles.scss';
+
+.about-outer-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 5% 8%;
+  .about-left-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .about-right-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import '../../../../styles.scss';
+
+.about-outer-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 5% 8%;
+  .about-left-container {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5%;
+    svg {
+      width: 50px;
+      path {
+        fill: $orangered;
+      }
+    }
+    .skill-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 20%;
+      .skill-name {
+        color: $brown;
+        font-size: 100%;
+        font-weight: 400;
+        margin-top: 4%;
+      }
+    }
+
+  }
+  .about-right-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    img {
+      width: 100%;
+    }
+  }
+}

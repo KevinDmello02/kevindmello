@@ -1,0 +1,87 @@
+@import '../../../../styles.scss';
+
+.home-ui-outer-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    video {
+      width: 100%;
+      height: 100vh;
+      object-fit: fill;
+    }
+  }
+  .about-outer-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .image-container {
+      background-color: $orangered;
+      width: 250px;
+      height: 250px;
+      border-radius: 100%;
+      img {
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+        object-fit: cover;
+        mix-blend-mode: hard-light;
+      }
+    }
+    h1 {
+      color: $cream-white;
+      font-weight: 500;
+      span {
+        font-weight: 800;
+        color: $brown;
+      }
+      margin-bottom: 0;
+      margin-top: 2%;
+    }
+    h5 {
+      color: $cream-white;
+      margin-bottom: 0;
+      margin-top: 2%;
+      font-size: 110%;
+      font-weight: 400;
+      span {
+        color: $brown;
+      }
+    }
+    #know-more-button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      margin-top: 10%;
+      background: transparent;
+      color: $cream-white;
+      border: 2px solid $cream-white;
+      padding: 2% 5%;
+      font-size: 115%;
+      width: 55%;
+      cursor: pointer;
+      i {
+        transform: rotate(0deg);
+        transition: all .3s ease-in-out;
+      }
+      transition: all .3s ease-in-out;
+      &:hover {
+        background-color: $brown;
+        border: 2px solid $brown;
+        color: $cream-white;
+        i {
+          transform: rotate(90deg);
+          color: $cream-white;
+        }
+      }
+    }
+  }
+}

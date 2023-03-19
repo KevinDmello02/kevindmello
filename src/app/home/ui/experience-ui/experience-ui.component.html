@@ -1,0 +1,18 @@
+<div class="experience-outer-container">
+  <div class="heading-container">
+    <h3 class="micro-heading-dark">Experience</h3>
+    <h2 class="heading-dark">My past experiences</h2>
+  </div>
+  <div class="experience-boxs-container">
+    <ng-container *ngFor="let experience of experiences">
+      <div class="experience-box">
+        <div class="company-name">
+          {{ experience.company }}
+        </div>
+        <div class="description">
+          <p class="paragraph">{{ experience.text }}</p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
